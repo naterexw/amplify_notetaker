@@ -1,4 +1,5 @@
 import React from 'react';
+import { withAuthenticator, AmplifySignOut } from 'aws-amplify-react';
 
 function App() {
   return (
@@ -8,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
